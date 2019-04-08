@@ -91,7 +91,7 @@ func FetchIps() (ips []Ip) {
 //   apnic|CN|ipv4|1.94.0.0|131072|20100806|allocated
 //   ...
 func FetchRemoteIps() (ips []Ip) {
-	println("正在从apnic.net下载ip地址库, 这需要好几分钟, 请耐心等待...")
+	println("Downloading IP database from apnic.net, please wait.")
 
 	resp, err := http.Get(REMOTE_URL)
 	if err != nil {

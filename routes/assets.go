@@ -1,8 +1,9 @@
 package routes
 
 import (
-	"github.com/kardianos/osext"
 	"go/build"
+
+	"github.com/kardianos/osext"
 )
 
 func getAssetsPath(mode string) (dir string) {
@@ -24,7 +25,7 @@ func getAssetsPath(mode string) (dir string) {
 }
 
 func getSourceDir() (string, error) {
-	p, err := build.Default.Import("github.com/sabersalv/freedom-routes/routes", "", build.FindOnly)
+	p, err := build.Default.Import("github.com/TGSAN/freedom-routes/routes", "", build.FindOnly)
 
 	return p.Dir, err
 }

@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/codegangsta/cli"
-	"github.com/sabersalv/freedom-routes/routes"
 	"os"
 	"path/filepath"
+
+	"github.com/TGSAN/freedom-routes/routes"
+	"github.com/codegangsta/cli"
 )
 
 const VERSION = "1.1.0"

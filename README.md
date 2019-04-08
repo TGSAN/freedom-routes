@@ -1,6 +1,6 @@
-**本项目已经不再更新, 欢迎感兴趣的人来接管这个项目 [#36](https://github.com/sabersalv/freedom-routes/issues/36)**
+**本项目接管自 [sabersalv/freedom-routes](https://github.com/sabersalv/freedom-routes)**
 
-支持平台: Linux, Mac OS X, Windows, OpenWRT, DD-WRT, ASUSWRT, OpenWRT(ChinaDNS)
+支持平台: Linux, Mac OS X, Windows, OpenWRT, DD-WRT, ASUSWRT, OpenWRT(ChinaDNS), SSTAP
 
 生成一个可以运行的脚本, 当VPN运行的时候, 自动添加国内的IP地址到系统`路由表`, 用`直接连接`方式访问国内的网站, 用`VPN`方式访问国外的网站, 从而提升网页浏览速度. (例如: 使用前ping baidu.com是300ms延迟, 使用后可以减少到30ms)
 
@@ -10,20 +10,20 @@
 - 2015-12-24: Windows下导入时间加快, 现在和Linux下一样, 都是秒时间导入. [#9](https://github.com/sabersalv/freedom-routes/issues/9)
 
 ## 项目一览
-命令行: [Go版本 - 本项目](https://github.com/sabersalv/freedom-routes), [Python版本](https://github.com/fivesheep/chnroutes)
+命令行: [Go版本 - 本项目](https://github.com/TGSAN/freedom-routes), [Python版本](https://github.com/fivesheep/chnroutes)
 
 图形化应用程序: [Windows](https://github.com/cqjjjzr/freedom-routes#windows%E7%89%88%E5%9B%BE%E5%BD%A2%E5%8C%96%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F)
 
 ## 对chnroutes的改进
 
 1. Linux和Windows下导入路由的速度更快, 秒时间导入
-2. 支持[模板](https://github.com/sabersalv/freedom-routes/tree/master/routes/templates), 可以自定义脚本
+2. 支持[模板](https://github.com/TGSAN/freedom-routes/tree/master/routes/templates), 可以自定义脚本
 
 # 网络版本
 
 ### 下载
 
-每24小时更新一次.
+每24小时更新一次. （保留自sabersalv/freedom-routes）
 
 - **Linux, OpenWRT, DD-WRT, ASUSWRT**: [linux.tar.gz](https://raw.githubusercontent.com/sabersalv/freedom-routes/dist/linux.tar.gz)
 - **Mac OS X**: [mac.zip](https://raw.githubusercontent.com/sabersalv/freedom-routes/dist/mac.zip)
@@ -70,8 +70,8 @@ cp routes-down.sh /etc/ppp/ip-down.d/ip-down
 (Linux)
 
 ```
-# curl https://raw.githubusercontent.com/sabersalv/freedom-routes/master/misc/linux/freedom-routes.service -o /etc/systemd/system/freedom-routes.service
-# curl https://raw.githubusercontent.com/sabersalv/freedom-routes/master/misc/linux/freedom-routes.timer -o /etc/systemd/system/freedom-routes.timer
+# curl https://raw.githubusercontent.com/TGSAN/freedom-routes/master/misc/linux/freedom-routes.service -o /etc/systemd/system/freedom-routes.service
+# curl https://raw.githubusercontent.com/TGSAN/freedom-routes/master/misc/linux/freedom-routes.timer -o /etc/systemd/system/freedom-routes.timer
 # systemctl start freedom-routes.timer
 # systemctl enable freedom-routes.timer
 ```
@@ -82,11 +82,11 @@ cp routes-down.sh /etc/ppp/ip-down.d/ip-down
 
 # 本地版本
 
-查看[本地版本使用说明](https://github.com/sabersalv/freedom-routes/blob/master/docs/local.md)
+查看[本地版本使用说明](https://github.com/TGSAN/freedom-routes/blob/master/docs/local.md)
 
 # 开发
 
-查看[开发文档](https://github.com/sabersalv/freedom-routes/blob/master/docs/Development.md)
+查看[开发文档](https://github.com/TGSAN/freedom-routes/blob/master/docs/Development.md)
 
 ## 任何人都可以帮助这个项目
 
@@ -96,5 +96,5 @@ cp routes-down.sh /etc/ppp/ip-down.d/ip-down
 - 欢迎其他开发者Fork和发送Pull-Request
 - 欢迎其他开发者申请Collaborator权限
 
-感谢所有[贡献者](https://github.com/sabersalv/freedom-routes/contributors). </br>
+感谢所有[贡献者](https://github.com/TGSAN/freedom-routes/contributors). </br>
 感谢原来的[chnroutes](https://github.com/fivesheep/chnroutes)作者.

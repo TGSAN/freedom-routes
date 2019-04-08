@@ -1,3 +1,5 @@
+**本项目已经不再更新, 欢迎感兴趣的人来接管这个项目 [#36](https://github.com/sabersalv/freedom-routes/issues/36)**
+
 支持平台: Linux, Mac OS X, Windows, OpenWRT, DD-WRT, ASUSWRT, OpenWRT(ChinaDNS)
 
 生成一个可以运行的脚本, 当VPN运行的时候, 自动添加国内的IP地址到系统`路由表`, 用`直接连接`方式访问国内的网站, 用`VPN`方式访问国外的网站, 从而提升网页浏览速度. (例如: 使用前ping baidu.com是300ms延迟, 使用后可以减少到30ms)

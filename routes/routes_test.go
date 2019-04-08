@@ -41,8 +41,12 @@ func TestCidr2mask(t *testing.T) {
 }
 
 func prepareTmpDir() {
-	os.RemoveAll("testtmp")
+	teardownTmpDir()
 	os.Mkdir("testtmp", 0755)
+}
+
+func teardownTmpDir() {
+	os.RemoveAll("testtmp")
 }
 
 func verifyGenerate(t *testing.T, path string) {
@@ -63,6 +67,7 @@ func verifyGenerate(t *testing.T, path string) {
 
 func TestGenerate(t *testing.T) {
 	prepareTmpDir()
+	defer teardownTmpDir()
 
 	ips := []Ip{
 		Ip{"192.168.1.1", "24", "255.255.255.0"},

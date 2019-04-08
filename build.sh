@@ -52,7 +52,7 @@ function build {
 	echo -e "\n>> building $platform/$arch"
 	output="dist/$platform.$arch/freedom-routes$(ext $os)"
 	sed -i "/const ASSETS_MODE/s~.*~const ASSETS_MODE = \"$assets_dir\"~" routes/routes.go
-	CGO_ENABLED=$(cgo_enabled $os) GOOS=$os GOARCH=$arch $GOROOT/bin/go build -o "$output"
+	CGO_ENABLED=$(cgo_enabled $os) GOOS=$os GOARCH=$arch go build -o "$output"
 	sed -i '/const ASSETS_MODE/s/.*/const ASSETS_MODE = "source"/' routes/routes.go
 	echo ">> created $output"
 }
